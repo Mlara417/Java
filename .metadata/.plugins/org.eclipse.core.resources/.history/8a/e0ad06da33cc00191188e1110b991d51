@@ -1,0 +1,42 @@
+package weightedAverageCalculator;
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class WeightedAverage {
+
+	public static void main(String[] args) {
+		Scanner myObj = new Scanner(System.in);
+		int firstSetNumber[] = new int[7];
+		int secondSetNumber[] = new int[7];
+		double firstSetMultiplier[] = new double[7];
+		double secondSetMultiplier[] = new double[7];
+		double multipliedResult[] = new double[7];
+		double multipledResultsSum;
+		
+		for (int i = 1; i < 3; i++) {
+			System.out.println("Enter first set number for pair " + i + ":");
+			firstSetNumber[i] = myObj.nextInt();
+			
+			System.out.println("Enter first set multiplier for pair " + i + ":");
+			firstSetMultiplier[i] = myObj.nextDouble();
+			
+			multipliedResult[i] = firstSetNumber[i] * firstSetMultiplier[i];
+			
+		}
+		
+		multipledResultsSum = Arrays.stream(multipliedResult).sum();
+		System.out.println(multipledResultsSum);
+		
+		/*for (int i = 1; i < 7; i++) {
+			System.out.println("Enter second set number for pair " + i + ":");
+			secondSetNumber[i] = myObj.nextInt();
+			
+			System.out.println("Enter second set multiplier for pair " + i + ":");
+			secondSetMultiplier[i] = myObj.nextDouble();
+			
+			multipliedResult[i] = secondSetNumber[i] * secondSetMultiplier[i];
+		}*/
+		
+	}
+
+}

@@ -1,0 +1,27 @@
+package weightedAverageCalculator;
+import java.util.Scanner;
+
+public class WeightedAverage {
+
+	public static void main(String[] args) {
+		Scanner myObj = new Scanner(System.in);
+		int firstSetNumber1, firstSetNumber2, firstSetNumber3,
+		firstSetNumber4, firstSetNumber5, firstSetNumber6,
+		secondSetNumber1, secondSetNumber2, secondSetNumber3, 
+		secondSetNumber4, secondSetNumber5, secondSetNumber6;
+		
+		double firstSetMultiplier1, firstSetMultiplier2, firstSetMultiplier3,
+		firstSetMultiplier4, firstSetMultiplier5, firstSetMultiplier6,
+		secondSetMultiplier1, secondSetMultiplier2, secondSetMultiplier3, 
+		secondSetMultiplier4, secondSetMultiplier5, secondSetMultiplier6;
+		
+		System.out.println("Enter number 1:");
+		firstSetNumber1 = myObj.nextInt();
+		
+		System.out.println("firstSetNumber1");
+		
+		
+
+	}
+
+}

@@ -1,0 +1,55 @@
+package weightedAverageCalculator;
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class WeightedAverage {
+
+	public static void main(String[] args) {
+		Scanner myObj = new Scanner(System.in);
+		int firstSetNumber[] = new int[7], 
+			secondSetNumber[] = new int[7];
+		double firstSetMultiplier[] = new double[7], 
+			   secondSetMultiplier[] = new double[7], 
+			   multipliedResult1[] = new double[7], 
+			   multipliedResult2[] = new double[7],
+			   weightedAverage1, weightedAverage2, masterAverage;
+		
+		
+		for (int i = 1; i < 3; i++) {
+			System.out.println("Enter first set number for pair " + i + ":");
+			firstSetNumber[i] = myObj.nextInt();
+			
+			System.out.println("Enter first set multiplier for pair " + i + ":");
+			firstSetMultiplier[i] = myObj.nextDouble();
+			
+			multipliedResult1[i] = firstSetNumber[i] * firstSetMultiplier[i];
+			
+		}
+		
+		weightedAverage1 = Arrays.stream(multipliedResult1).sum();
+		
+		
+		for (int i = 1; i < 3; i++) {
+			System.out.println("Enter second set number for pair " + i + ":");
+			secondSetNumber[i] = myObj.nextInt();
+			
+			System.out.println("Enter second set multiplier for pair " + i + ":");
+			secondSetMultiplier[i] = myObj.nextDouble();
+			
+			multipliedResult2[i] = secondSetNumber[i] * secondSetMultiplier[i];
+		}
+		
+		weightedAverage2 = Arrays.stream(multipliedResult2).sum();
+		
+		masterAverage = weightedAverage1 + weightedAverage2;
+		
+		System.out.println("Your First Weighted Average is " + weightedAverage1
+				+ ".");
+		System.out.println("Your Second Weighted Average is " + weightedAverage2
+				+ ".");
+		System.out.println("Your Master Average is " + masterAverage
+			+ ".");
+		
+	}
+
+}
