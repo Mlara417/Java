@@ -51,7 +51,7 @@ public class WeightedAverage {
 		}
 
 		masterAverage = sum / weightedAverage.size();
-		System.out.println("Your Weighted Averages are " + weightedAverage   
+		System.out.println("Your Weighted Average are " + weightedAverage   
 				+ ".");
 		System.out.println("Your Master Average is " + masterAverage
 			+ ".");

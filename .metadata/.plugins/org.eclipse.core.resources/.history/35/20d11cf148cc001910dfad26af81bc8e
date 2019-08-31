@@ -42,6 +42,9 @@ public class WeightedAverage {
 			}
 
 			weightedAverage.add(Arrays.stream(multipliedResult).sum());
+
+			System.out.println("Set " + x + " Weighted Average is " + weightedAverage   
+				+ ".");
 		}
 		
 		//finding master average
@@ -51,7 +54,7 @@ public class WeightedAverage {
 		}
 
 		masterAverage = sum / weightedAverage.size();
-		System.out.println("Your Weighted Averages are " + weightedAverage   
+		System.out.println("Your Weighted Averages are " + weightedAverage
 				+ ".");
 		System.out.println("Your Master Average is " + masterAverage
 			+ ".");
