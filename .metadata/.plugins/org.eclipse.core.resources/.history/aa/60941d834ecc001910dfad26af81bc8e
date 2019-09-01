@@ -60,7 +60,7 @@ public class WeightedAverage {
 		}
 		
 		
-		
+		//finding master average and printing
 		masterAverage = sum / weightedAverage.size();
 		System.out.println("Your Master Average is " + masterAverage
 			+ ".");
