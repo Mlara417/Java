@@ -55,7 +55,7 @@ public class WeightedAverage {
 		for(y = 0; y < weightedAverage.size(); y++) {
 			sum += weightedAverage.get(y);
 			
-			System.out.println("Your set " + (y+1) + " Weighted Average is " + weightedAverage.get(y)   
+			System.out.println("Your set " + (y+1) + " Weighted Averages is " + weightedAverage.get(y)   
 					+ ".");
 		}
 		
