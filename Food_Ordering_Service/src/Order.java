@@ -24,6 +24,12 @@ public class Order {
 			   extraDelivery = 7.00,
 			   orderTotal = 0.00;
 		
+		System.out.println("Here's a list of available items\n"
+				+ "Burger: $4.50 \n"
+				+ "Fries: $2.50 \n"
+				+ "Drink: $1.50 \n"
+				+ "Dessert: $3.00 ");
+		
 		
 		for (var x = 0; x < Main.items; x ++) {
 			
@@ -62,26 +68,27 @@ public class Order {
 			if (Main.zipCode < Delivery.maxZipValueAvail && Main.zipCode > Delivery.minZipValueAvail) {
 				
 				sum += delivery;
-				System.out.println("Your delivery total is " + "$" + sum);
-				System.out.println("You have ordered the following: " + cleanSelections);
+				System.out.println("Your delivery total is " + "$" + sum + 
+						           "\nThank you for your order. "
+						           + "\nYou have ordered the following: " + cleanSelections);
 				
 			} else if(Main.zipCode >= (Delivery.restaurantZipCode + 5) || Main.zipCode <= (Delivery.restaurantZipCode - 5)) {
 					
 				sum += extraDelivery;
-				System.out.println("Your extra charge delivery total is " + "$" + sum);
-				System.out.println("You have ordered the following: " + cleanSelections);
+				System.out.println("Your extra charge delivery total is " + "$" + sum + 
+						           "\nThank you for your order. "
+						           + "\nYou have ordered the following: " + cleanSelections);
 
 			} else {
 
-				System.out.println("Delivery is not Available");
-					
+				System.out.println("Delivery is not Available");		
 			}
 				
 		} else {
 
-				System.out.println("Your pickup total is " + "$" + sum);
-				System.out.println("You have ordered the following: " + cleanSelections);			
-			
+				System.out.println("Your pickup total is " + "$" + sum + 
+						          "\nThank you for your order. "
+						          + "\nYou have ordered the following: " + cleanSelections);
 		}
 		
 		

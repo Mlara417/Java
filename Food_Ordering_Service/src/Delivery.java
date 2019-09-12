@@ -14,7 +14,7 @@ class Delivery {
 
 			System.out.println("Delivery is Available");
 			
-		} else if(Main.zipCode >= maxZipValueAvail || Main.zipCode <= minZipValueAvail) {
+		} else if(Main.zipCode == maxZipValueAvail || Main.zipCode == minZipValueAvail) {
 
 			System.out.println("Delivery is Available with Extra Cost");
 
