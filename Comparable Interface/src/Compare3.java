@@ -1,11 +1,7 @@
 
 public class Compare3 {
 
-	public static void largest(Short val1 , Short val2  , Short val3) {
-		
-		val1 = 1;
-		val2 = 2;
-		val3 = 3;
+	public static void largest(Integer val1 , Integer val2  , Integer val3) {
 		
 		// TODO Auto-generated method stub
 		if (val1.compareTo(val2) == 1 && val1.compareTo(val3) == 1 ) {
