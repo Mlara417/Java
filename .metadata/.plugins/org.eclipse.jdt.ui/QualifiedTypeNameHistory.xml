@@ -4,4 +4,6 @@
     <fullyQualifiedTypeName name="javax.swing.JFrame"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="CPSC50300.Maryland"/>
+    <fullyQualifiedTypeName name="CPSC50300.Place"/>
 </qualifiedTypeNameHistroy>

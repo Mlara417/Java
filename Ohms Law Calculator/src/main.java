@@ -29,7 +29,7 @@ public class main {
 			} else {
 			System.out.print("That is not a valid response\n");
 			System.out.println ();
-			main.main(args);
+			main(args);
 			} 
 	}
 
@@ -53,3 +53,33 @@ public class main {
  * was adding in the input. That made me realize that the conditions in my else statements weren't working 
  * since the data was being passed but my desired actions were being skipped. 
  * https://cl.ly/565db9 */
+
+
+/*ISSUE 2: I got a java.lang.Error: Unresolved compilation problem: 
+ * amp cannot be resolved to a variable and basically this meant a misspelled variable. 
+ * By stepping through the debugger I was able to pinpoint the exact issue. 
+ * 
+ * 
+ *https://cl.ly/c5c99d 
+ *
+ **/
+
+
+
+/*ISSUE 3 Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
+ * The method Calculations(String) is undefined for the type main
+ * 
+ * I was calling just the class without the method within the class. 
+ * 
+ * https://cl.ly/1b4518
+ * 
+ **/
+
+/*ISSUE 4
+ * java.lang.Error: Unresolved compilation problem: 
+ * Syntax error, insert "}" to complete ClassBody
+ * 
+ * When adding the comments, I added an extra \*\/ and it caused the symbol to get confused
+ * 
+ * https://cl.ly/8a486e
+ * */
