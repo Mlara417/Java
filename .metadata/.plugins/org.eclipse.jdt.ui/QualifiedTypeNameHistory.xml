@@ -6,4 +6,6 @@
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="CPSC50300.Maryland"/>
     <fullyQualifiedTypeName name="CPSC50300.Place"/>
+    <fullyQualifiedTypeName name="java.util.Queue"/>
+    <fullyQualifiedTypeName name="com.sun.jmx.remote.internal.ArrayQueue"/>
 </qualifiedTypeNameHistroy>

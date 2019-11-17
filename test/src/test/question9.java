@@ -1,25 +1,36 @@
 package test;
 
-public class question9 {
+import java.util.*;
 
-	public static int question9(String a, char b, int i) {
-		if (i == a.length()) { 
-			return 0;
-		} else if (b == a.charAt(i)) {
-			return question9(a, b, i+1) + 1;
-		} else {
-			return question9(a, b, i+1);
+public class question9 {
+	//sends setup request for VCI addresses 
+	public static void main(String[] args) {
+		int[] router = {1, 2, 3};
+		int[] inVCI = new int[3];//Incoming VCI's
+		int[] outVCI = new int[3];//outgoing VCI's
+		int[] portIn = {1, 1, 2};//incoming port #
+		int[] portOut = {3, 2, 3};//outgoing port #
+		int vci = 0;
+		
+		Random gen = new Random();
+		
+		System.out.println("Sending setup request... ");
+		//prints to console
+		for (int i = 0; i < inVCI.length; i++) {
+			vci = 1 + gen.nextInt(98);
+			inVCI[i] = vci;
+			}//creates random VCI addresses for incoming packet at each switch
+		
+		int destination =  1 + gen.nextInt(98);//creates VCI address for destination node 
+		outVCI[outVCI.length-1]= destination;
+		for (int j=1; j< inVCI.length; j++) {
+			outVCI[j-1] = inVCI[j];
+			}//sets the outgoing VCI for packet going back to starting node
+		
+		System.out.println("Setup Acknowledged!"+"\n"+" the table is below"+"\n");
+		
+		for ( int k =0; k < inVCI.length; k++) {
+			System.out.println("At switch "+ router[k]+ " Incoming Port "+portIn[k]+" Incoming VCI "+inVCI[k]+" Outgoing Port " +portOut[k]+ " Outgoing VCI " + outVCI[k]);
+			}//prints the table of VCI and ports
 		}
 	}
-	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		String a = null;
-		char b = 0;
-		int i = 0;
-		
-		System.out.print(question9(a, b, 0));
-
-	}
-
-}
