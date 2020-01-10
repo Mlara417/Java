@@ -30,17 +30,16 @@ public class Kata {
 		
 		
 		
-	}
+	}	
+
 
 		
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub		
 		
-		String[] myString;
+		String[] myString = {"good", "bad", "good", "good"};
 		
-		Scanner scan = new Scanner(System.in);
-		myString = scan.nextLine();
 		
 		System.out.println(well(myString));
 
