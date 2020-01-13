@@ -5,7 +5,7 @@ public class App {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		System.out.println(binarySearch(new int[] {12,26,37,43,58,69,74,88,95,107,115}, 95));
+		System.out.println(recursiveBinarySearch(new int[] {12,26,37,43,58,69,74,88,95,107,115}, 0, 10, 95));
 
 	}
 	
@@ -30,6 +30,23 @@ public class App {
 			}
 		}
 		return -1;
+	
 	}
+	
+	public static int recursiveBinarySearch(int [] a, int p, int r, int x) {
+		if(p > r) {
+			return -1;
+		} else {
+			int q = (p+r) / 2;
+			if(a[q] == x) {
+				return q;
+			} else if(a[q] > x) {
+				return recursiveBinarySearch(a, p, q-1, x);
+			} else {
+				return recursiveBinarySearch(a, q+1, r, x);
+			}
+		}
+	}
+	
 
 }
