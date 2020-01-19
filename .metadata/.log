@@ -7413,3 +7413,6 @@ org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide
 
 !ENTRY org.eclipse.egit.core 1 0 2020-01-19 16:06:49.271
 !MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2020-01-19 16:18:00.621
+!MESSAGE No repository found at http://download.eclipse.org/efxclipse/updates-release/1.2.0/site/.
